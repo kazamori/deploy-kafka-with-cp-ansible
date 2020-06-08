@@ -61,11 +61,13 @@ $ export ANSIBLE_HASH_BEHAVIOUR="merge"
 ### deploy specified components
 
 ```bash
-$ ansible-playbook -i hosts.yml cp-ansible/all.yml
+$ cd cp-ansible
+$ ansible-playbook -i ../hosts.yml all.yml
 ```
 
 ### deploy specified components
 
 ```bash
-$ ansible-playbook -i hosts.yml cp-ansible/all.yml --tags zookeeper,kafka_broker
+$ cd cp-ansible
+$ ansible-playbook -i ../hosts.yml all.yml --tags zookeeper,kafka_broker
 ```
